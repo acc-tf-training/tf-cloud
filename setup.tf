@@ -46,3 +46,4 @@ resource "aws_security_group" "sg" {
     Name = "${terraform.workspace}-securitygroup"
   }
 }
+
