@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 #Get Linux AMI ID using SSM Parameter endpoint in us-east-1
