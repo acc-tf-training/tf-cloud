@@ -2,7 +2,7 @@
 resource "aws_vpc" "vpc_master" {
   cidr_block = "10.0.0.0/16"
   tags = {
-    Name = "${terraform.workspace}-vpc-cloud"
+    Name = "vpc-cloud"
   }
 
 }
@@ -19,7 +19,7 @@ resource "aws_subnet" "subnet" {
   cidr_block        = "10.0.1.0/24"
 
   tags = {
-    Name = "${terraform.workspace}-subnet"
+    Name = "subnet"
   }
 }
 
@@ -43,7 +43,7 @@ resource "aws_security_group" "sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "${terraform.workspace}-securitygroup"
+    Name = "securitygroup"
   }
 }
 
